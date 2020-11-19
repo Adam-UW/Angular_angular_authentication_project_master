@@ -1,0 +1,19 @@
+<table class="table" border="1">
+  <tr>
+    <th>Product Name</th>
+    <th>QTY</th>
+    <th>Subtotal</th>
+  </tr>
+  <tr *ngFor="let pp of itemsList">
+    <td><a><i style="margin: 5px;" class="fas fa-cart-plus"></i></a>{{pp.name}}</td>
+    <td>
+      <span style="margin: 5px; cursor: pointer;" (click)="decrementItem(pp.name)
+      "><i class="fas fa-minus f" ></i></span>
+      <span>{{pp.qty}}</span>
+      <span style="margin: 5px; cursor: pointer;" (click)="incrementItem(pp.name)"><i class="fas fa-plus"></i></span>
+    </td>
+    <td><p>{{pp.price}}</p></td>
+  </tr>
+</table>
+
+<button type="submit" (click)="shipping()" class="btn btn-lg btn-dark btn-outline-primary">Check Out</button>

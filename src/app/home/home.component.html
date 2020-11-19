@@ -1,0 +1,57 @@
+<!-- <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"> -->
+<div *ngIf="notify" class="alert alert-success container marge">
+    {{ notify }}
+</div>
+<!-- <p class="container">home page!</p> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div style="text-align: center;">
+          <img src="https://cdn.shopify.com/s/files/1/1270/8237/products/PC-558_CC-03_641fa9b8-ef0c-4c87-b811-9d40ede365c6_982x982.png?v=1537512149" class="card-img-top" alt="...">
+          </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong><h3>iPhone 11</h3></strong></h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div style="text-align: center;">
+            <a href="#" (click)="add_items('iPhone11', 1000)"><i class="fas fa-cart-plus fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm" >
+      <div class="card">
+        <div style="text-align: center;">
+          <img  src="https://external-preview.redd.it/-CrtPtJYaBgSBSEDfHDPf8jLnPnm2JbW_8vrJEWI45k.png?auto=webp&s=7a04d25b3370a5e721072df128951748d8f9e943" class="card-img-top" alt="...">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title"><strong><h3>Apple Watch</h3></strong></h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div style="text-align: center;">
+            <a href="#" (click)="add_items('applewatch', 60)" ><i class="fas fa-cart-plus fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+        <div style="text-align: center;">
+          <img src="https://cdn.tmobile.com/images/png/products/accessories/190198764690/190198764690-large.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong><h3>Airpod</h3></strong></h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div style="text-align: center;">
+            <a href="#" (click)="add_items('airpod', 50)"><i class="fas fa-cart-plus fa-2x"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
